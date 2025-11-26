@@ -6,14 +6,14 @@ import { LogoutButton } from "./logout-button";
 export async function AuthButton() {
   const supabase = await createClient();
 
-  // You can also use getUser() which will be slower.
-  const { data } = await supabase.auth.getClaims();
+  // Get user data to access user_metadata
+  const { data: { user } } = await supabase.auth.getUser();
 
-  const user = data?.claims;
+  const firstName = user?.user_metadata?.first_name || user?.email?.split('@')[0] || 'there';
 
   return user ? (
     <div className="flex items-center gap-4">
-      Hey, {user.email}!
+      Hey, {firstName}!
       <LogoutButton />
     </div>
   ) : (
