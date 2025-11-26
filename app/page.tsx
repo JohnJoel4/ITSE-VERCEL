@@ -271,7 +271,7 @@ export default function Home() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Card className="p-8 md:p-12 bg-gradient-to-br from-violet-600 via-purple-600 to-fuchsia-600 text-white border-0 relative overflow-hidden">
+            <Card className="p-8 md:p-12 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white border-0 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32"></div>
               <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full -ml-24 -mb-24"></div>
               

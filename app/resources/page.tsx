@@ -150,8 +150,16 @@ export default function ResourcesPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-600 text-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-600 text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-black/50 z-10"></div>
+          <img 
+            src="/images/resources.jpg" 
+            alt="Resources" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="container mx-auto px-4 relative z-20">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
               Learning Resources
