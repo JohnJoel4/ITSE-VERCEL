@@ -65,6 +65,34 @@ export function MobileMenu() {
               Resources
             </Link>
             <Link
+              href="/leadership"
+              className="block px-3 py-2 text-base font-medium rounded-md hover:bg-accent"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Leadership
+            </Link>
+            <Link
+              href="/dashboard"
+              className="block px-3 py-2 text-base font-medium rounded-md hover:bg-accent"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Dashboard
+            </Link>
+            <Link
+              href="/dashboard/admin"
+              className="block px-3 py-2 text-base font-medium rounded-md hover:bg-accent"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Admin
+            </Link>
+            <Link
+              href="/dashboard/corporate"
+              className="block px-3 py-2 text-base font-medium rounded-md hover:bg-accent"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Corporate
+            </Link>
+            <Link
               href="/contact"
               className="block px-3 py-2 text-base font-medium rounded-md hover:bg-accent"
               onClick={() => setMobileMenuOpen(false)}

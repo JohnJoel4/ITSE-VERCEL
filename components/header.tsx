@@ -19,7 +19,7 @@ export function Header() {
               width={120}
               height={48}
               priority
-              className="h-12 w-auto"
+              style={{ height: '48px', width: 'auto' }}
             />
           </div>
         </Link>
@@ -55,6 +55,30 @@ export function Header() {
             className="text-sm font-medium transition-colors hover:text-primary"
           >
             Resources
+          </Link>
+          <Link
+            href="/leadership"
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
+            Leadership
+          </Link>
+          <Link
+            href="/dashboard"
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
+            Dashboard
+          </Link>
+          <Link
+            href="/dashboard/admin"
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
+            Admin
+          </Link>
+          <Link
+            href="/dashboard/corporate"
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
+            Corporate
           </Link>
           <Link
             href="/contact"
